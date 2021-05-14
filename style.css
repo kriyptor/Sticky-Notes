@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: #e5e5f7;
+    background-size: 20px 20px;
+    background-image:  repeating-linear-gradient(0deg, #c6c9fc, #c6c9fc 1px, #e5e5f7 1px, #e5e5f7);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.main-container{
+    width: 95%;
+    margin: auto;
+}
+
+.container1{
+    margin-left: 5%;
+}
+
+.container2{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    
+}
+
+.container3{
+     display: none;
+     position: absolute;
+     top: 26%;
+     left: 40%;
+}
+
+textarea{
+    box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.50);
+    outline: none;
+    border: none;
+    width: 275px;
+    height: 275px;
+    padding: 40px 25px 25px 25px;
+}
+
+img{
+    color: grey;
+}
+
+.Plus-icon{
+    position: absolute;
+    right: 17%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.Cross-icon{
+    position: absolute;
+    right: 5%;
+    top: 4%;
+    cursor: pointer;
+}
+
+button{
+    width: 170px;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+button:hover{
+    position: relative;
+    transform: scale(0.9);
+}
+
+@media only screen and (max-width: 600px) {
+    .container2{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+
+    .container3{
+        display: none;
+        position: absolute;
+        top: 26%;
+        left: 10%;
+   }
+    
+}
